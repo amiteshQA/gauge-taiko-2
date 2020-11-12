@@ -3,11 +3,11 @@
 const path = require('path');
 const { openBrowser, goto, write, click, title, closeBrowser } = require('taiko');
 const assert = require("assert");
-const headless = process.env.headless_chrome.toLowerCase() === 'false';
+//const headless = process.env.headless_chrome.toLowerCase() === 'true';
 
 
 beforeSuite(async () => {
-    await openBrowser({args:['--window-size=1440,900']});
+    await openBrowser({headless: false});
 });
 
 step("Goto google page", async () => {
