@@ -7,7 +7,7 @@ const headless = process.env.headless_chrome.toLowerCase() === 'false';
 
 
 beforeSuite(async () => {
-    await openBrowser({args:['--window-size=1440,900']});
+    await openBrowser({headless: false});
 });
 
 step("Goto google page", async () => {
