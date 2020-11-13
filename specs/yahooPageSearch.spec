@@ -4,9 +4,9 @@ This is an executable specification file. This file follows markdown syntax. Eve
 To execute this specification, use
 	npm test
 
-## Searching in the google page
+## Searching for yahoo page
 
-* Goto google page
-* Search for keyword "Gauge Taiko"
-* Verify page title
+* Goto yahoo page
+* Search for yahoo keyword "Gauge Taiko"
+* Verify yahoo page title
 
